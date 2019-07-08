@@ -1,0 +1,19 @@
+{
+  "name": "luizalabs-desafio",
+  "version": "1.0.0",
+  "description": "Parser e Api de consulta",
+  "main": "server",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "dev": "npm run server"
+  },
+  "author": "Melina Carniel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
