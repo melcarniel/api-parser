@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
-    "dev": "npm run server"
+    "dev": "npm run server",
+    "test": "mocha || true"
   },
   "author": "Melina Carniel",
   "license": "ISC",
@@ -14,6 +15,9 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.1.4",
     "nodemon": "^1.19.1"
   }
 }
