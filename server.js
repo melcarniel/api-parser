@@ -10,6 +10,9 @@ app.get('/', (req, res) => {
   res.send('API no ar!')
 });
 
+//Rotas
+app.use('/games', require('./routes/gamesRoute'));
+
 app.listen(PORT, () => {
     console.log(`Servidor no ar pela porta ${PORT}`);
   });
