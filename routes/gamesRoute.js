@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
-
+const Parser = require('../parser/parser');
 
 
 //@route  GET /games
@@ -16,7 +16,10 @@ router.get('/', async (req, res) => {
                 res.status(500).send({ error: err });
             }
            
-            res.json(log.toString());
+            let text = log.toString();
+            let result = Parser(text);
+
+            res.json(result);
         });
 
     } catch (error) {
